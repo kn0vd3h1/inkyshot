@@ -26,6 +26,7 @@ data:
     - FONT: AmaticSC
     - TEST_CHARACTER: a
   defaultDeviceType: raspberry-pi
+  dummy: true
   supportedDeviceTypes:
     - raspberry-pi
     - raspberrypi3
