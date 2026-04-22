@@ -36,3 +36,4 @@ COPY update-display.py .
 CMD ["/bin/bash","start.sh"]
 
 ENV DEVICE_HOSTNAME inkyshot
+# Change to trigger job
