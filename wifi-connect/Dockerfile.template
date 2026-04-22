@@ -1,1 +1,1 @@
-FROM balenablocks/wifi-connect:%%BALENA_ARCH%%# Trigger change
+FROM balenablocks/wifi-connect:%%BALENA_ARCH%%
